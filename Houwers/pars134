@@ -1,0 +1,10 @@
+individuals 3
+samples		1000
+thin		100
+population	1
+mcmc		1
+data_file	Data/data_multi.csv
+expno		134
+pars_file	Results/134.best
+temp_file	Results/130.ladr
+derived     0

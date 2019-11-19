@@ -1,0 +1,81 @@
+20 single inf_age, conditional probability model
+21 single latent,  conditional probability model
+22 single inf_age, probability model, 1982, no delta
+23 single latent,  probability model, 1982, no delta
+24 single inf_age, probability model, no 1982, delta
+25 single latent,  probability model, no 1982, delta
+26 dual inf_age, probability model, 1982
+27 dual latent,  probability model, 1982
+28 dual inf_age, probability model, no 1982
+29 dual latent,  probability model, no 1982
+30 dual latent,  probability model, no 1982, reduced sus for 4 ewes
+31 dual latent,  probability model, no 1982, no beta_field
+32 inf_age, probability model, no 1982, no dams
+34 inf_age, probability model, 1982, no dams
+
+40 as 39 with all March 82 infections removed
+41 as 39 with housing only in March
+
+33 no 1982, donor 2 infectious
+35    1982, donor 2 latent
+37 no 1982, donor 2 latent, single rate
+39 no 1982, donor 2 latent
+
+55 donor 2 latent
+
+53 base
+54 beta_housed = beta_pc
+56 50% housing in Dec.
+57 beta_field = 0
+
+76 full model
+77 beta_field = 0
+78 fixed latent period
+79 beta_field, beta_housed, variable latent
+80 exponentially distributed seroconversion period
+81 beta_field=0, fixed latent period 
+82 one transmission rate, variable latent
+84 beta_field=0, beta_housed, variable latent
+
+
+# models 100-110 have exponential distributed seroconversion
+100 beta_field, beta_housed, S_mu1, S_mu2 (1982), fixed latent
+101 beta_field=0, beta_housed, S_mu1, S_mu2 (1982), fixed latent
+102 beta_field, beta_housed, S_mu1, S_mu2 (1982, 1983), fixed latent
+103 beta_field=beta_housed, S_mu1, S_mu2 (1982), fixed latent
+104 beta_field, beta_housed, S_field, S_housed, S_(1982, 1983), fixed latent
+105 as 102 with variable housing period
+106 as 100 with latent period=seroconversion period+L_mu
+107 ..
+108 beta_field, beta_housed, S_mu1<T, S_mu2>T, S_mu3 (1982, 1983), fixed latent
+109 
+110 as 106 with beta_field=0
+
+78  beta_field, beta_housed, beta_pc, single seroconversion rate, fixed latent
+120 beta_field, beta_housed, S_1, S_2 (1982) variable latent, variable housing period - 4 uninfected sheep
+121 two transmission, two seroconversion, variable latent, variable housing period
+122 as 121, fixed latent period
+123 as 122, beta_field=0
+124 as 122, single seroconversion rate
+125 as 122, single transmission rate
+126 as 121, fixed latent period relative to seroconversion
+127 as 126, beta_field=0
+128 as 121, 4 uninfected have lower susceptibility, prob susceptibility in likelihood
+129 as 128, beta_field=0
+
+PAPER
+*130 two transmission, two seroconversion, variable latent, variable housing period, non-susceptibles, donor 72 latent
+131 as 133, donor 72 not latent
+133 as 130, ind 3 only, fixed latent period - USED FOR PARAMETER VALUES
+134 as 130, ind 3 only, 0 latent period
+135 as 133, two transmission, one seroconversion
+136 as 133, three transmission, one seroconversion
+*137 as 133, beta_field = beta_housed
+138 as 133, beta_field = 0
+139 as 133, three transmission, two seroconversion
+140 as 133, exponentially distributed seroconversion
+141 as 133, used for example pdf output (fig 8)
+142 as 133, fixed latent period relative to seroconversion
+143 as 133, no latent period, rising infectivity
+
+*todo again
